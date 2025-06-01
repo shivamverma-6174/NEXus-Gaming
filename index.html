@@ -1,0 +1,270 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEXUS Gaming</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Exo+2:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            
+            <div class="nav-logo">
+                <span class="logo-text">NEXUS</span>
+                <span class="logo-gaming">Gaming</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#games" class="nav-link">Games</a></li>
+                <li><a href="#profile" class="nav-link">Profile</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+    
+    
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Home Page -->
+        
+        <div id="home" class="page active">
+            <!-- Hero Section -->
+            <section class="hero">
+                <div class="hero-background">
+                    <div class="grid-overlay"></div>
+                </div>
+                <div class="hero-content">
+                    <div class="hero-3d-element">
+                        <div class="hologram-container">
+                            <canvas id="hologramCanvas"></canvas>
+                        </div>
+                        <!-- 3D Element placeholder -->
+                        <!-- <div style="width: 200px; height: 200px; margin: 0 auto; background: linear-gradient(45deg, var(--primary-color), var(--secondary-color)); border-radius: 50%; opacity: 0.7;"></div> -->
+                    </div>
+                    <h1 class="hero-title">
+                        <span class="title-line">Welcome to</span>
+                        <span class="title-line highlight-text">NEXUS Gaming</span>
+                        <span class="title-line">Experience</span>
+                    </h1>
+                    <p class="hero-subtitle">Immerse yourself in the future of gaming with cutting-edge 3D experiences</p>
+                    <div class="hero-buttons">
+                        <button class="btn btn-primary">Play Now</button>
+                        <button class="btn btn-secondary">Explore Games</button>
+                    </div>
+                </div>
+            </section>
+
+
+
+            <!-- Featured Games Section -->
+            <section class="featured-games">
+                <div class="container">
+                    <h2 class="section-title">Featured Games</h2>
+                    
+                    <!-- Filter Tabs -->
+                    <div class="filter-tabs">
+                        <button class="filter-btn active" data-filter="all">All Games</button>
+                        <button class="filter-btn" data-filter="action">Action</button>
+                        <button class="filter-btn" data-filter="racing">Racing</button>
+                        <button class="filter-btn" data-filter="space">Space</button>
+                    </div>
+
+                    <div class="games-grid">
+                        <div class="game-card" data-category="action">
+                            <div class="game-image">
+                                <div class="game-preview cyber-city"></div>
+                            </div>
+                            <div class="game-info">
+                                <h3>Cyber City</h3>
+                                <p>Explore a futuristic cyberpunk metropolis with stunning 3D graphics and immersive gameplay.</p>
+                                <div class="game-rating">
+                                    <div class="stars">★★★★★</div>
+                                    <span class="rating-text">4.8/5</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="game-card" data-category="racing">
+                            <div class="game-image">
+                                <div class="game-preview neon-racing"></div>
+                            </div>
+                            <div class="game-info">
+                                <h3>Neon Racing</h3>
+                                <p>High-speed racing through neon-lit tracks with realistic physics and dynamic weather.</p>
+                                <div class="game-rating">
+                                    <div class="stars">★★★★☆</div>
+                                    <span class="rating-text">4.6/5</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="game-card" data-category="space">
+                            <div class="game-image">
+                                <div class="game-preview space-wars"></div>
+                            </div>
+                            <div class="game-info">
+                                <h3>Space Wars</h3>
+                                <p>Epic space battles with advanced AI and stunning visual effects in deep space.</p>
+                                <div class="game-rating">
+                                    <div class="stars">★★★★★</div>
+                                    <span class="rating-text">4.9/5</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="game-card" data-category="strategy">
+                            <div class="game-image">
+                                <div class="game-preview quantum-strategy"></div>
+                            </div>
+                            <div class="game-info">
+                                <h3>Quantum Strategy</h3>
+                                <p>Mind-bending strategy game with time manipulation and quantum mechanics.</p>
+                                <div class="game-rating">
+                                    <div class="stars">★★★☆☆</div>
+                                    <span class="rating-text">4.7/5</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="game-card" data-category="action">
+                            <div class="game-image">
+                                <div class="game-preview mech-warriors"></div>
+                            </div>
+                            <div class="game-info">
+                                <h3>Mech Warriors</h3>
+                                <p>Control giant mechs in intense combat scenarios with destructible environments.</p>
+                                <div class="game-rating">
+                                    <div class="stars">★★★★★</div>
+                                    <span class="rating-text">4.5/5</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="game-card" data-category="racing">
+                            <div class="game-image">
+                                <div class="game-preview racing-legends"></div>
+                            </div>
+                            <div class="game-info">
+                                <h3>Racing Legends</h3>
+                                <p>High-speed racing through neon-lit tracks with realistic physics and dynamic weather.</p>
+                                <div class="game-rating">
+                                    <div class="stars">★★★★☆</div>
+                                    <span class="rating-text">4.9/5</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Games Page -->
+        <div id="games" class="page">
+            <div class="page-header">
+                <h1 class="page-title">Game Library</h1>
+                <p class="page-subtitle">Discover amazing 3D gaming experiences</p>
+            </div>
+            <div class="container">
+                <div class="filter-tabs">
+                    <button class="filter-btn active" data-filter="all">All Games</button>
+                    <button class="filter-btn" data-filter="action">Action</button>
+                    <button class="filter-btn" data-filter="racing">Racing</button>
+                    <button class="filter-btn" data-filter="space">Space</button>
+                    <button class="filter-btn" data-filter="strategy">Strategy</button>
+                </div>
+                <div class="games-grid">
+                    <!-- Games will be dynamically loaded here -->
+                </div>
+            </div>
+        </div>
+
+        <!-- Profile Page -->
+        <div id="profile" class="page">
+            <div class="page-header">
+                <h1 class="page-title">Player Profile</h1>
+                <p class="page-subtitle">Your gaming achievements and statistics</p>
+            </div>
+            <div class="container">
+                <div class="profile-content">
+                    <div class="profile-card">
+                        <div class="profile-avatar">
+                            <div class="avatar-3d"></div>
+                        </div>
+                        <div class="profile-info">
+                            <h2>Shivam Verma</h2>
+                            <p class="profile-level">Level 42</p>
+                            <div class="profile-stats">
+                                <div class="stat">
+                                    <span class="stat-value">1,247</span>
+                                    <span class="stat-label">Games Played</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat-value">89%</span>
+                                    <span class="stat-label">Win Rate</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat-value">156</span>
+                                    <span class="stat-label">Achievements</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- About Page -->
+        <div id="about" class="page">
+            <div class="page-header">
+                <h1 class="page-title">About NEXUS Gaming</h1>
+                <p class="page-subtitle">Pioneering the future of interactive entertainment</p>
+            </div>
+            <div class="container">
+                <div class="about-content">
+                    <div class="about-text">
+                        <h2>Our Mission</h2>
+                        <p>NEXUS Gaming is dedicated to creating immersive 3D gaming experiences that push the boundaries of what's possible in web-based entertainment. We combine cutting-edge technology with innovative game design to deliver unforgettable experiences.</p>
+                        <p>Our team of passionate developers and designers work tirelessly to create games that not only entertain but also inspire and challenge players around the world.</p>
+                        <p>- Shivam Verma</p>
+                    </div>
+                    <div class="tech-showcase">
+                        <div class="tech-item">HTML</div>
+                        <div class="tech-item">CSS</div>
+                        <div class="tech-item">JAVASCRIPT</div>
+                        <div class="tech-item">TYPESCRIPT</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span class="logo-text">NEXUS</span>
+                    <span class="logo-gaming">Gaming</span>
+                </div>
+                <div class="footer-links">
+                    <a href="#privacy">Privacy Policy</a>
+                    <a href="#terms">Terms of Service</a>
+                    <a href="#support">Support</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 NEXUS Gaming. All rights reserved by SHIVAM VERMA.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+</body>
+</html>
