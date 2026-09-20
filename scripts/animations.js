@@ -1,6 +1,7 @@
 
 // Advanced Animation System for NeonGaming
 
+
 class AnimationManager {
     constructor() {
         this.animations = new Map();
