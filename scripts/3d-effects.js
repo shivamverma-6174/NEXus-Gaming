@@ -2,6 +2,7 @@
 // 3D Effects and Interactions
 
 // Initialize all 3D effects
+
 function initialize3DEffects() {
     initializeTiltCards();
     initialize3DCube();
